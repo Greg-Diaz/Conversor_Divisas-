@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conversor de Divisas</title>
 </head>
 <body>
   
@@ -14,39 +14,50 @@
     <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
     
     
-    <div class="container mt-4">
-        <h1>Divisas</h1>
+    <div class="container mt-4"> 
+        <h1>Conversor de Divisas</h1>
 
         <form id="formulario">
-            <input type="number"  id="val" >
-            <br>
-            <select  id="tmon">
-            <option value="dolar">Dolar</option>
-            <option value="pmex">Peso Mexicano </option>
-            <option value="pcol">Peso Colombiano</option>
-            <option value="euro">Euro</option>
-            <option value="lest">Libra Estelina</option>
+            <div class="mb-3">
+           
+             <select class="form-select" aria-label="Default select example" id="tmon"> 
+                <option selected> Seleccione su divisa</option>
+                <option value="dolar">Dolar</option>
+                <option value="pmex">Peso Mexicano </option>
+                <option value="pcol">Peso Colombiano</option>
+                <option value="euro">Euro</option>
+                <option value="lest">Libra Estelina</option>
             </select>
-            <br>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="number" type="email" class="form-control"  placeholder="name@example.com"   id="val" >
+                <label for="val">Digita la Cantidad de divisar</label>
+                
+            </div>
+           <div class="mb-3">
             
-            <select  id="tcmon">
+           
+            <select  class="form-select" aria-label="Default select example" id="tcmon">
+                <option selected> Seleccione su divisa de cambio </option>
                 <option value="dolar">Dolar</option>
                 <option value="pmex">Peso Mexicano </option>
                 <option value="pcol">Peso Colombiano</option>
                 <option value="euro">Euro</option>
                 <option value="lest">Libra Esterlina</option>
                 </select>
-                <br>
-            <input   type="submit" value="Calcular">
+                </div>
+              
+                <input   type="submit" class="btn btn-primary" value="Convertir">
 
         </form>
-
-        <div   id= "cambio" class="container"  >
+        </div>
+        <div class="container mt-4">
+        <div   id= "cambio" class="card"  >
 
             
 
         </div>
-
+    </div>
 <script src="script.js"></script>
 </body>
 </html>

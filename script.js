@@ -111,7 +111,7 @@ const cald = (valor, tmon, tcmon) => {
                         total = tcambio + '  Euros' ;
                     }
 
-            } document.getElementById("cambio").innerHTML += '<section>' + total + '</section>' ;
+            } document.getElementById("cambio").innerHTML += '<div class="mb-3"><h3> Su total al cambio es de : ' + total + '</h3></div>' ;
         
            
 
